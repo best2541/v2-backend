@@ -1,0 +1,61 @@
+post http://localhost:4000/login/auth
+Content-Type: application/json
+
+    {
+        "username":"@admin",
+        "password":"1234@admin"
+    }
+###
+GET http://localhost:4000/login/isAuth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkBhZG1pbiIsImlhdCI6MTYyODMxMTYwM30.JMg3oCrk-lXRPjNJyrAKs6swx3ZPyr2x291Zty4ChD4
+
+###
+get http://localhost:4000/content/detail/5
+
+###
+get http://localhost:4000/content/actor?page=1
+
+###
+get http://localhost:4000/content/tagactor/จาพนม
+
+###
+get http://localhost:4000/content/actor/detail/110
+
+###
+get http://localhost:4000/content/category/2?page=1
+
+###
+post http://localhost:4000/content/insertactor
+Content-Type: application/json
+
+    {
+        "firstname":"testq",
+        "nationality":"fdsf"
+    }
+
+###
+get http://localhost:4000/content/category/5
+
+###
+get http://localhost:4000/content/categories
+
+###
+get http://localhost:4000/content/search?page=1
+
+###
+post https://movie-search-backend.herokuapp.com/login/auth
+Content-Type: application/json
+
+    {
+        "username":"@admin",
+        "password":"1234@admin"
+    }
+###
+get https://movie-search-backend.herokuapp.com/login/isAuth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkBhZG1pbiIsImlhdCI6MTYyMzkyMjU0OSwiZXhwIjoxNjIzOTIyNjM1fQ.NnBsyJ0YIKOepSvpWiZkQEzNLH3GmZPCjajcdx_TGYY
+
+###
+DELETE http://localhost:4000/content/delete/64
+
+###
+DELETE http://localhost:4000/content/actordelete/19
